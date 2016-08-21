@@ -7,7 +7,7 @@ ${REMOTE_URL}     http://localhost:${APPIUM_PORT}/wd/hub
 ${PLATFORM_NAME}    Android
 ${PLATFORM_VERSION}    5.0.1
 ${DEVICE_NAME}    8b5b597b
-${APP}            /Users/omeniateststation/jenkins/workspace/appium_demo/apps/ContactManager/ContactManager.apk
+${APP}            /Users/omeniateststation/jenkins/workspace/appium_demo/apps/ContactManager/ContactManager-selendroid.apk
 
 *** Keywords ***
 add new contact
