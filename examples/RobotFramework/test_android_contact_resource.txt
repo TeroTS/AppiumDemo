@@ -4,8 +4,8 @@ Library           AppiumLibrary
 *** Variables ***
 ${REMOTE_URL}     http://localhost:4723/wd/hub
 ${PLATFORM_NAME}    Android
-${PLATFORM_VERSION}    4.2.2
-${DEVICE_NAME}    Android Emulator
+${PLATFORM_VERSION}    5.0.1
+${DEVICE_NAME}    8b5b597b
 ${APP}            ../../../sample-code/apps/ContactManager/ContactManager.apk
 
 *** Keywords ***
