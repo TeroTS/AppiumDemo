@@ -1,0 +1,18 @@
+*** Settings ***
+Library           AppiumLibrary		run_on_failure=No Operation
+
+*** Variables ***
+${PLATFORM}			iOS
+${VERSION}          9.3
+${DEVICE_NAME}		iPhone
+${BROWSER_NAME}		Safari
+${APPIUM_PORT}		4491
+${UDID}             3d7977b396773096a92aebd93c9752e596cf96b8
+${APPIUM_URL}		http://localhost:${APPIUM_PORT}/wd/hub
+${APP}              ${CURDIR}/demoapp_ios/TestApp.app
+
+*** Keywords ***
+Open Browser
+    Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  app=${BROWSER_NAME}	udid=${UDID}  automationName=appium
+Open App
+    Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  app=${APP}	udid=${UDID}  automationName=appium

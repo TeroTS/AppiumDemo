@@ -1,0 +1,18 @@
+*** Settings ***
+Resource                resources/variables_${PHONE_MODEL}.txt
+Test Teardown           Close Application
+
+*** Test Cases ***
+go_to_sandbox
+    [Tags]    demo
+    Open Browser
+    Go To URL       http://saucelabs.com/test/guinea-pig
+    Wait Until Page Contains        This page is a Selenium sandbox
+    Capture Page Screenshot     filename=image_0_${PHONE_MODEL}.png
+    Click Element   xpath=//*[@id="i am a link"]
+    Wait Until Page Contains        I am another div
+    Page Should Contain Text        I am some other page content
+    Go Back
+    Wait Until Page Contains        This page is a Selenium sandbox
+    Input Text   identifier=comments    My comment
+    Capture Page Screenshot     filename=image_1_${PHONE_MODEL}.png

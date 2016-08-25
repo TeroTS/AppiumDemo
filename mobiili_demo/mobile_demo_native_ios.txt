@@ -1,0 +1,13 @@
+*** Settings ***
+Resource                resources/variables_${PHONE_MODEL}.txt
+Test Teardown           Close Application
+
+*** Test Cases ***
+calculate_sum
+    [Tags]    demo
+    Open App
+    Input Text    name=IntegerA     1
+    Input Text    name=IntegerB     2
+    Click Element    name=ComputeSumButton
+    Capture Page Screenshot     filename=image_0_${PHONE_MODEL}.png
+    Page Should Contain Text    3
