@@ -1,0 +1,20 @@
+*** Settings ***
+Library           AppiumLibrary
+
+*** Variables ***
+${APPIUM_PORT}   4492
+${REMOTE_URL}     http://localhost:${APPIUM_PORT}/wd/hub
+${PLATFORM_NAME}    Android
+${PLATFORM_VERSION}    5.1.1
+${DEVICE_NAME}    1921a8e0
+${APP}            /Users/omeniateststation/jenkins/workspace/appium_demo/apps/ContactManager/ContactManager.apk
+
+*** Keywords ***
+add new contact
+    [Arguments]    ${contact_name}    ${contact_phone}    ${contact_email}
+    Open Application    ${REMOTE_URL}    platformName=${PLATFORM_NAME}   platformVersion=${PLATFORM_VERSION}    deviceName=${DEVICE_NAME}    app=${APP}
+    Click Element    accessibility_id=Add Contact
+    Input Text    id=com.example.android.contactmanager:id/contactNameEditText    ${contact_name}
+    Input Text    id=com.example.android.contactmanager:id/contactPhoneEditText    ${contact_phone}
+    Input Text    id=com.example.android.contactmanager:id/contactEmailEditText    ${contact_email}
+    Click Element    accessibility_id=Save
