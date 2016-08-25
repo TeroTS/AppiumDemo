@@ -10,7 +10,5 @@ add_new_contact
     Input Text    id=contactNameEditText    Timo Testaaja
     Input Text    id=contactPhoneEditText    040-12345678
     Input Text    id=contactEmailEditText    timo.testaaja@mail.com
-    Capture Page Screenshot     filename=image_0_${PHONE_MODEL}.png
     Click Element    id=contactSaveButton
-    Capture Page Screenshot     filename=image_1_${PHONE_MODEL}.png
     Page Should Contain Text    Timo Testaaja
