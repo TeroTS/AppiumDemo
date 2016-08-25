@@ -8,7 +8,7 @@ ${PLATFORM_NAME}   iOS
 ${PLATFORM_VERSION}    9.3
 ${UDID} = 3d7977b396773096a92aebd93c9752e596cf96b8 
 ${DEVICE_NAME}   Antti's iPhone 
-${APP}            /Users/omeniateststation/jenkins/workspace/appium_demo/apps/TestApp/build/Release-iphoneos/TestApp.app
+${APP}            /Users/omeniateststation/jenkins/workspace/appium_demo_ios_native/apps/TestApp/build/Release-iphoneos/TestApp.app
 
 *** Keywords ***
 open app

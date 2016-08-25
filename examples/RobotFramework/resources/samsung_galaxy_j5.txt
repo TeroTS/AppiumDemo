@@ -7,7 +7,7 @@ ${REMOTE_URL}     http://localhost:${APPIUM_PORT}/wd/hub
 ${PLATFORM_NAME}    Android
 ${PLATFORM_VERSION}    5.1.1
 ${DEVICE_NAME}    1921a8e0
-${APP}            /Users/omeniateststation/jenkins/workspace/appium_demo/apps/android-rottentomatoes-demo-debug.apk
+${APP}            /Users/omeniateststation/jenkins/workspace/appium_demo_android_native/apps/android-rottentomatoes-demo-debug.apk
 
 *** Keywords ***
 add new contact
