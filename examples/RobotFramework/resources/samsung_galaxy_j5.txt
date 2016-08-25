@@ -2,7 +2,7 @@
 Library           AppiumLibrary
 
 *** Variables ***
-${APPIUM_PORT}   4492
+${APPIUM_PORT}   4490
 ${REMOTE_URL}     http://localhost:${APPIUM_PORT}/wd/hub
 ${PLATFORM_NAME}    Android
 ${PLATFORM_VERSION}    5.1.1
