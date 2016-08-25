@@ -1,0 +1,15 @@
+*** Settings ***
+Library           AppiumLibrary
+
+*** Variables ***
+${APPIUM_PORT}   4491
+${REMOTE_URL}     http://localhost:${APPIUM_PORT}/wd/hub
+${PLATFORM_NAME}   iOS 
+${PLATFORM_VERSION}    9.3
+${UDID} = 3d7977b396773096a92aebd93c9752e596cf96b8 
+${DEVICE_NAME}   Antti's iPhone 
+${APP}            /Users/omeniateststation/jenkins/workspace/appium_demo/apps/TestApp/build/Release-iphoneos/TestApp.app
+
+*** Keywords ***
+open app
+    Open Application    ${REMOTE_URL}    platformName=${PLATFORM_NAME}   platformVersion=${PLATFORM_VERSION}    deviceName=${DEVICE_NAME}    app=${APP}
