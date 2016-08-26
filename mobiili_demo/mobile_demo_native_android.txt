@@ -1,14 +1,33 @@
 *** Settings ***
-Resource                resources/variables_${PHONE_MODEL}.txt
-Test Teardown           Close Application
+Resource            resources/variables_${PHONE_MODEL}.robot
+Suite Setup         Open App
+Suite Teardown      Close Application
+
+
+*** Variables ***
+${MOVIE_LIST}                   id=lvMovies
+${LIST_ITEM_TITLE}              tvTitle
+${LIST_ITEM_CRITICS_SCORE}      tvCriticsScore
+${LIST_ITEM_AUDIENCE_SCORE}     id=tvAudienceScore
+
 
 *** Test Cases ***
-add_new_contact
-    [Tags]    demo
-    Open App
-    Click Element    name=Add Contact
-    Input Text    id=contactNameEditText    Timo Testaaja
-    Input Text    id=contactPhoneEditText    040-12345678
-    Input Text    id=contactEmailEditText    timo.testaaja@mail.com
-    Click Element    id=contactSaveButton
-    Page Should Contain Text    Timo Testaaja
+Rottentomatoes demo test
+    Wait Until Page Contains Element    ${MOVIE_LIST}
+    ${critics_score}=    Select Movie    War Dogs
+    Wait Until Page Contains Element    ${LIST_ITEM_AUDIENCE_SCORE}
+    Critics Rating Should Match    ${critics_score}
+
+
+*** Keywords ***
+Select Movie
+    [Arguments]    ${name}
+    ${movie_xpath}=    Set Variable    xpath=//android.widget.TextView[contains(@resource-id, '${LIST_ITEM_TITLE}') and (@text = '${name}')]
+    ${critics_score}=    Get Element Attribute    ${movie_xpath}/following-sibling::android.widget.TextView[contains(@resource-id, '${LIST_ITEM_CRITICS_SCORE}')]    text
+    Click Element    ${movie_xpath}
+    [Return]    ${critics_score}
+
+Critics Rating Should Match
+    [Arguments]    ${expected_rating}
+    ${critics_rating}=     Get Element Attribute    id=${LIST_ITEM_CRITICS_SCORE}    text
+    Should Contain    ${critics_rating}    ${expected_rating}
