@@ -1,5 +1,5 @@
 *** Settings ***
-Resource            resources/variables_${PHONE_MODEL}.robot
+Resource            resources/variables_${PHONE_MODEL}.txt
 Suite Setup         Open App
 Suite Teardown      Close Application
 
