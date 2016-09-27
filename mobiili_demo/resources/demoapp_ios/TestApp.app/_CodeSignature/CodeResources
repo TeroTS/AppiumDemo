@@ -8,13 +8,17 @@
 		<data>
 		poDYGy1JWXBgPH3/wCEBNbVTOks=
 		</data>
-		<key>GestureTestViewController.nib</key>
+		<key>GestureTestViewController.nib/objects.nib</key>
 		<data>
-		PibaTH2yTaF8GXkBt83COSqUBh8=
+		uTBtzRvh6C7nmMe5civJ7tuZN8M=
+		</data>
+		<key>GestureTestViewController.nib/runtime.nib</key>
+		<data>
+		5xj2IyefmmCQRxoH4/ywwnJ7MTg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		f2xm8GkcvKJMcHRJFgmiiaMu1Ls=
+		uJk6NKTvvTnOOyp/cSyVAEpkm2I=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -22,7 +26,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		+TWdx+AV8gO21z78G4qMveNzxRE=
+		c3Ieu95V+Chy2VdauNb1JsWcqlw=
 		</data>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -42,11 +46,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en.lproj/MyViewControllerViewController.nib</key>
+		<key>en.lproj/MyViewControllerViewController.nib/objects.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			L0K/GV4JCPdpHJN+735bf0W0udA=
+			eEku9TKwJOB7HYAVLrY98sPetVY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/MyViewControllerViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bo0mqUxG0FNguBtMGv7O4VdhRZQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -65,26 +78,37 @@
 			UdHegDh1HZlDpSEYtzMl4sjA9q8uvK4K9OL0sRTFD6M=
 			</data>
 		</dict>
-		<key>GestureTestViewController.nib</key>
+		<key>GestureTestViewController.nib/objects.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PibaTH2yTaF8GXkBt83COSqUBh8=
+			uTBtzRvh6C7nmMe5civJ7tuZN8M=
 			</data>
 			<key>hash2</key>
 			<data>
-			rFzUEkgwYJZnwgIDjmW2mnLlsmQT6luKMUkYHoCfwcQ=
+			sr414fvWHL/GDXEcwxtIc8OWoHZgFRgWgCWDKzq4OtQ=
+			</data>
+		</dict>
+		<key>GestureTestViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5xj2IyefmmCQRxoH4/ywwnJ7MTg=
+			</data>
+			<key>hash2</key>
+			<data>
+			Fxs8nt7D9X2pXlFrQMsZh4Vs8S/637c2MUKKUDHsi1g=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+TWdx+AV8gO21z78G4qMveNzxRE=
+			c3Ieu95V+Chy2VdauNb1JsWcqlw=
 			</data>
 			<key>hash2</key>
 			<data>
-			vqCDLrWp1+oH1b2dSMv5eVKrP6OQDuEtVESiwzxQybU=
+			svTBBKxMx1b6ooaaOoDYhOpZxvs6R4AHVblB1BzzmDw=
 			</data>
 		</dict>
 		<key>en.lproj/InfoPlist.strings</key>
@@ -113,15 +137,28 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>en.lproj/MyViewControllerViewController.nib</key>
+		<key>en.lproj/MyViewControllerViewController.nib/objects.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			L0K/GV4JCPdpHJN+735bf0W0udA=
+			eEku9TKwJOB7HYAVLrY98sPetVY=
 			</data>
 			<key>hash2</key>
 			<data>
-			3nGiVvflI167DRgQSLMAWVgXhbkzPEFA52nehdXulFc=
+			21DCG+gqfYAlYGgNrc9Kt3Tb+3Mz3PO94Nm3q2RoTPk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/MyViewControllerViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bo0mqUxG0FNguBtMGv7O4VdhRZQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			vaFdWBbL7bJiOp8LINoxbjthNuuwz4AAAVbFOyIpQZ0=
 			</data>
 			<key>optional</key>
 			<true/>
