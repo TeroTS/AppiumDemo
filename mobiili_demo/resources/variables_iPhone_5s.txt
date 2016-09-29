@@ -9,7 +9,7 @@ ${BROWSER_NAME}		Safari
 ${APPIUM_PORT}		4491
 ${UDID}             3d7977b396773096a92aebd93c9752e596cf96b8
 ${APPIUM_URL}		http://localhost:${APPIUM_PORT}/wd/hub
-${APP}              ${CURDIR}/demoapp_ios/TestApp.app
+${APP}              /Users/omeniateststation/teststation/AppiumDemo/apps/TestApp/build/Release-iphoneos/TestApp.app
 
 *** Keywords ***
 Open Browser
