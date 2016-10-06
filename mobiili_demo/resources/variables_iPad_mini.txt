@@ -6,7 +6,7 @@ ${PLATFORM}			iOS
 ${VERSION}          9.3.1
 ${DEVICE_NAME}		iPad
 ${BROWSER_NAME}		Safari
-${APPIUM_PORT}		4492
+${APPIUM_PORT}		4493
 ${UDID}             a688ac41cfdaf552b5714313fac02bdf54f92a55
 ${APPIUM_URL}		http://localhost:${APPIUM_PORT}/wd/hub
 ${APP}              /Users/omeniateststation/teststation/AppiumDemo/apps/TestApp/build/Release-iphoneos/TestApp.app
