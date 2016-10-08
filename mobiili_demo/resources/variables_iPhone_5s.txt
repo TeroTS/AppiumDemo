@@ -13,6 +13,6 @@ ${APP}              /Users/omeniateststation/teststation/AppiumDemo/apps/TestApp
 
 *** Keywords ***
 Open Browser
-    Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  app=${BROWSER_NAME}	udid=${UDID}  screenshotWaitTimeout=5  automationName=appium
+    Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  app=${BROWSER_NAME}	udid=${UDID}  screenshotWaitTimeout=5  launchTimeout=10000  automationName=appium
 Open App
-    Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  app=${APP}	udid=${UDID}  automationName=appium
+    Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  app=${APP}	udid=${UDID}  screenshotWaitTimeout=5  launchTimeout=10000  automationName=appium
