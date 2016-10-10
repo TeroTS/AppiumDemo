@@ -14,7 +14,7 @@ ${LIST_ITEM_AUDIENCE_SCORE}     id=tvAudienceScore
 *** Test Cases ***
 Rottentomatoes demo test
     Wait Until Page Contains Element    ${MOVIE_LIST}
-    ${critics_score}=    Select Movie    War Dogs
+    ${critics_score}=    Select Movie    Deepwater Horizon
     Wait Until Page Contains Element    ${LIST_ITEM_AUDIENCE_SCORE}
     Critics Rating Should Match    ${critics_score}
 
