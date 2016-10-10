@@ -14,6 +14,7 @@ ${LIST_ITEM_AUDIENCE_SCORE}     id=tvAudienceScore
 *** Test Cases ***
 Rottentomatoes demo test
     Wait Until Page Contains Element    ${MOVIE_LIST}
+    Wait Until Page Contains   Deepwater Horizon
     ${critics_score}=    Select Movie    Deepwater Horizon
     Wait Until Page Contains Element    ${LIST_ITEM_AUDIENCE_SCORE}
     Critics Rating Should Match    ${critics_score}
