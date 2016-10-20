@@ -13,8 +13,7 @@ web_demo
     Page Should Contain Text        I am some other page content
     Go Back
     Wait Until Page Contains        This page is a Selenium sandbox
-    Clear Text   i_am_a_textbox
-    Input Text   i_am_a_textbox   This is new text
+    Input Text   i_am_a_textbox   This is a new text
     Click Element   unchecked_checkbox
     Click Element   checked_checkbox
     Input Text   fbemail   tomi.testaaja@mail.com
