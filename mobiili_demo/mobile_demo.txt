@@ -3,7 +3,7 @@ Resource                resources/variables_${PHONE_MODEL}.txt
 Test Teardown           Close Application
 
 *** Test Cases ***
-go_to_sandbox
+web_demo
     [Tags]    demo
     Open Browser
     Go To URL       http://saucelabs.com/test/guinea-pig
@@ -13,5 +13,10 @@ go_to_sandbox
     Page Should Contain Text        I am some other page content
     Go Back
     Wait Until Page Contains        This page is a Selenium sandbox
-    Input Text   identifier=comments    My comment: Test, test, test, test, test, test, test
+    Clear Text   i_am_a_textbox
+    Input Text   i_am_a_textbox   This is new text
+    Click Element   unchecked_checkbox
+    Click Element   checked_checkbox
+    Input Text   fbemail   tomi.testaaja@mail.com
+    Input Text   comments    My comment: Test, test, test, test, test, test, test
     # Capture Page Screenshot     filename=image_1_${PHONE_MODEL}.png

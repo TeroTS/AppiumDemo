@@ -18,12 +18,19 @@ Rottentomatoes demo test
     ${critics_score}=    Select Movie    Deepwater Horizon
     Wait Until Page Contains Element    ${LIST_ITEM_AUDIENCE_SCORE}
     Critics Rating Should Match    ${critics_score}
+    Go back
     Wait Until Page Contains Element    ${MOVIE_LIST}
     Wait Until Page Contains   Storks    
     ${critics_score}=    Select Movie    Storks
     Wait Until Page Contains Element    ${LIST_ITEM_AUDIENCE_SCORE}
     Critics Rating Should Match    ${critics_score}
-
+    Go Back
+    Wait Until Page Contains Element    ${MOVIE_LIST}
+    Wait Until Page Contains   Sully    
+    ${critics_score}=    Select Movie    Sully
+    Wait Until Page Contains Element    ${LIST_ITEM_AUDIENCE_SCORE}
+    Critics Rating Should Match    ${critics_score}
+    Go back
 
 
 *** Keywords ***
