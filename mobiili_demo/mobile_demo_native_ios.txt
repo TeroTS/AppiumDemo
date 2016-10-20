@@ -11,6 +11,7 @@ demo_test
     Click Element   accessibility_id=OK
     Click Element   accessibility_id=Test Gesture
     Swipe   100   150   100   200
+    Go Back
     Input Text    name=IntegerA     1
     Input Text    name=IntegerB     2
     Click Element    name=ComputeSumButton
