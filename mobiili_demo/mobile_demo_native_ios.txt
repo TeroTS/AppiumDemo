@@ -10,5 +10,5 @@ demo_test
     Wait Until Page Contains   Cool title
     Click Element   accessibility_id=OK
     Click Element   accessibility_id=Test Gesture
-    Repeat Keyword  3  Swipe  ${START_X}  ${START_Y}  ${END_X}  ${END_Y}
+    Repeat Keyword  3  Swipe  ${START_X}  ${START_Y}  ${END_X}  ${END_Y}  duration=500
 
