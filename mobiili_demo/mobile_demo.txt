@@ -13,5 +13,5 @@ go_to_sandbox
     Page Should Contain Text        I am some other page content
     Go Back
     Wait Until Page Contains        This page is a Selenium sandbox
-    Input Text   identifier=comments    My comment
-    Capture Page Screenshot     filename=image_1_${PHONE_MODEL}.png
+    Input Text   identifier=comments    My comment: Test, test, test, test, test, test, test
+    # Capture Page Screenshot     filename=image_1_${PHONE_MODEL}.png
