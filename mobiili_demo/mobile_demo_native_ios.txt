@@ -6,14 +6,13 @@ Test Teardown           Close Application
 demo_test
     [Tags]    demo
     Open App
-    Input Text    name=IntegerA     1
-    Input Text    name=IntegerB     2
-    Hide Keyboard
-    Click Element    name=ComputeSumButton
-    Page Should Contain Text    3
     Click Element   accessibility_id=show alert
     Wait Until Page Contains   Cool title
     Click Element   accessibility_id=OK
     Click Element   accessibility_id=Test Gesture
     Swipe   100   150   100   200
+    Input Text    name=IntegerA     1
+    Input Text    name=IntegerB     2
+    Click Element    name=ComputeSumButton
+    Page Should Contain Text    3
 
