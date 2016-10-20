@@ -13,9 +13,8 @@ web_demo
     Page Should Contain Text        I am some other page content
     Go Back
     Wait Until Page Contains        This page is a Selenium sandbox
-    Input Text   i_am_a_textbox   This is a new text
     Click Element   unchecked_checkbox
     Click Element   checked_checkbox
     Input Text   fbemail   tomi.testaaja@mail.com
-    Input Text   comments    My comment: Test, test, test, test, test, test, test
+    Input Text   comments    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac lorem ut lorem euismod iaculis. Proin varius scelerisque tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque auctor dolor sit amet scelerisque condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     # Capture Page Screenshot     filename=image_1_${PHONE_MODEL}.png
