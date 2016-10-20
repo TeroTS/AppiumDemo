@@ -11,12 +11,4 @@ demo_test
     Click Element   accessibility_id=OK
     Click Element   accessibility_id=Test Gesture
     Repeat Keyword  3  Swipe  ${START_X}  ${START_Y}  ${END_X}  ${END_Y}
- #   Swipe   300   400   300   500
- #   Swipe   300   300   300   600
- #   Swipe   400   500   400   600
-
-#    Input Text    name=IntegerA     1
-#    Input Text    name=IntegerB     2
-#    Click Element    name=ComputeSumButton
-#    Page Should Contain Text    3
 
