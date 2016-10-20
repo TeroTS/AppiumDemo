@@ -10,6 +10,10 @@ ${APPIUM_PORT}		4493
 ${UDID}             a688ac41cfdaf552b5714313fac02bdf54f92a55
 ${APPIUM_URL}		http://localhost:${APPIUM_PORT}/wd/hub
 ${APP}              /Users/omeniateststation/teststation/AppiumDemo/apps/TestApp/build/Release-iphoneos/TestApp.app
+${START_X}			300
+${START_Y}			300
+${END_X} 			300
+${END_Y}			600
 
 *** Keywords ***
 Open Browser
