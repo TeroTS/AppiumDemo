@@ -1,0 +1,17 @@
+*** Settings ***
+Library           AppiumLibrary
+
+*** Variables ***
+${PLATFORM}         Android
+${VERSION}          6.0
+${DEVICE_NAME}      M79D7PWCJB4PBITG
+${BROWSER_NAME}     Chrome
+${APPIUM_PORT}      4490
+${APPIUM_URL}       http://localhost:${APPIUM_PORT}/wd/hub
+${APP}              ${CURDIR}/demoapp_android/android-rottentomatoes-demo-debug.apk
+
+*** Keywords ***
+Open Browser
+    Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  app=${BROWSER_NAME}  automationName=appium
+Open App
+    Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  app=${APP}  automationName=appium
