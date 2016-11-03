@@ -3,45 +3,40 @@ Resource            resources/variables_${PHONE_MODEL}.txt
 Suite Setup         Open App
 Suite Teardown      Close Application
 
-
 *** Variables ***
-${MOVIE_LIST}                   id=lvMovies
-${LIST_ITEM_TITLE}              tvTitle
-${LIST_ITEM_CRITICS_SCORE}      tvCriticsScore
-${LIST_ITEM_AUDIENCE_SCORE}     id=tvAudienceScore
-
+${HOME_LABEL}   1
+${WORK_LABEL}   2
+${MOBILE_LABEL}   3
+${OTHER_LABEL}   4
 
 *** Test Cases ***
-Rottentomatoes demo test
-    Wait Until Page Contains Element    ${MOVIE_LIST}
-    Wait Until Page Contains   Deepwater Horizon
-    ${critics_score}=    Select Movie    Deepwater Horizon
-    Wait Until Page Contains Element    ${LIST_ITEM_AUDIENCE_SCORE}
-    Critics Rating Should Match    ${critics_score}
-    Go back
-    Wait Until Page Contains Element    ${MOVIE_LIST}
-    Wait Until Page Contains   Storks    
-    ${critics_score}=    Select Movie    Storks
-    Wait Until Page Contains Element    ${LIST_ITEM_AUDIENCE_SCORE}
-    Critics Rating Should Match    ${critics_score}
-    Go Back
-    Wait Until Page Contains Element    ${MOVIE_LIST}
-    Wait Until Page Contains   Sully    
-    ${critics_score}=    Select Movie    Sully
-    Wait Until Page Contains Element    ${LIST_ITEM_AUDIENCE_SCORE}
-    Critics Rating Should Match    ${critics_score}
-    Go back
-
+Add contacts
+    [Tags]    demo
+    Add New Contact    Timo Testaaja    timo.testaaja@test.com   040-12234568   ${WORK_LABEL}
+    Page Should Contain Text    Timo Testaaja
+    Add New Contact    Anna Admin    anna.admin@test.com   050-4648352542   ${MOBILE_LABEL}
+    Page Should Contain Text    Anna Admin    
+    Add New Contact    Teuvo Devaaja    teuvo.devaaja@test.com   040-35389823   ${OTHER_LABEL}
+    Page Should Contain Text    Teuvo Devaaja
 
 *** Keywords ***
-Select Movie
-    [Arguments]    ${name}
-    ${movie_xpath}=    Set Variable    xpath=//android.widget.TextView[contains(@resource-id, '${LIST_ITEM_TITLE}') and (@text = '${name}')]
-    ${critics_score}=    Get Element Attribute    ${movie_xpath}/following-sibling::android.widget.TextView[contains(@resource-id, '${LIST_ITEM_CRITICS_SCORE}')]    text
-    Click Element    ${movie_xpath}
-    [Return]    ${critics_score}
+Add New Contact
+    [Arguments]    ${contact_name}    ${contact_phone}    ${contact_email}   ${label}
+    Open Application    ${REMOTE_URL}    ${PLATFORM_NAME}    ${PLATFORM_VERSION}    ${DEVICE_NAME}    ${APP}
+    Click Element    accessibility_id=Add Contact
+    Input Text    id=com.example.android.contactmanager:id/contactNameEditText    ${contact_name}
+    Input Text    id=com.example.android.contactmanager:id/contactPhoneEditText    ${contact_phone}
+    Select Phone Label  ${label}
+    Input Text    id=com.example.android.contactmanager:id/contactEmailEditText    ${contact_email}
+    Select Email Label  ${label}
+    Click Element    accessibility_id=Save
 
-Critics Rating Should Match
-    [Arguments]    ${expected_rating}
-    ${critics_rating}=     Get Element Attribute    id=${LIST_ITEM_CRITICS_SCORE}    text
-    Should Contain    ${critics_rating}    ${expected_rating}
+Select Phone Label
+    [Arguments]    ${index} 
+    Click Element   id=com.example.android.contactmanager:id/contactPhoneTypeSpinner
+    Click Element   xpath=//android.widget.CheckedTextView[${index}]
+
+Select Email Label
+    [Arguments]    ${index} 
+    Click Element   id=com.example.android.contactmanager:id/contactEmailTypeSpinner
+    Click Element   xpath=//android.widget.CheckedTextView[${index}]

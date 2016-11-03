@@ -8,7 +8,7 @@ ${DEVICE_NAME}      5200586668722333
 ${BROWSER_NAME}     Chrome
 ${APPIUM_PORT}      4492
 ${APPIUM_URL}       http://localhost:${APPIUM_PORT}/wd/hub
-${APP}              ${CURDIR}/demoapp_android/android-rottentomatoes-demo-debug.apk
+${APP}              ${CURDIR}/demoapp_android/ContactManager.apk
 
 *** Keywords ***
 Open Browser
