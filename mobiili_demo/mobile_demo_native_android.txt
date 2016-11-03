@@ -12,11 +12,11 @@ ${OTHER_LABEL}   4
 *** Test Cases ***
 Add contacts
     [Tags]    demo
-    Add New Contact    Timo Testaaja    timo.testaaja@test.com   040-12234568   ${WORK_LABEL}
+    Add New Contact    Timo Testaaja    040-12234568   timo.testaaja@test.com   ${WORK_LABEL}
     Page Should Contain Text    Timo Testaaja
-    Add New Contact    Anna Admin    anna.admin@test.com   050-4648352542   ${MOBILE_LABEL}
+    Add New Contact    Anna Admin    050-4648352542   anna.admin@test.com   ${MOBILE_LABEL}
     Page Should Contain Text    Anna Admin    
-    Add New Contact    Teuvo Devaaja    teuvo.devaaja@test.com   040-35389823   ${OTHER_LABEL}
+    Add New Contact    Teuvo Devaaja    040-35389823   teuvo.devaaja@test.com   ${OTHER_LABEL}
     Page Should Contain Text    Teuvo Devaaja
 
 *** Keywords ***
