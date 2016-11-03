@@ -22,7 +22,6 @@ Add contacts
 *** Keywords ***
 Add New Contact
     [Arguments]    ${contact_name}    ${contact_phone}    ${contact_email}   ${label}
-    Open Application    ${REMOTE_URL}    ${PLATFORM_NAME}    ${PLATFORM_VERSION}    ${DEVICE_NAME}    ${APP}
     Click Element    accessibility_id=Add Contact
     Input Text    id=com.example.android.contactmanager:id/contactNameEditText    ${contact_name}
     Input Text    id=com.example.android.contactmanager:id/contactPhoneEditText    ${contact_phone}
