@@ -2,6 +2,7 @@
 Library           AppiumLibrary		run_on_failure=No Operation
 
 *** Variables ***
+${CONFIG}	  /usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/.xcconfig
 ${PLATFORM}			iOS
 ${VERSION}          9.3
 ${DEVICE_NAME}		iPhone
@@ -19,4 +20,4 @@ ${END_Y}			250
 Open Browser
     Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  app=${BROWSER_NAME}	udid=${UDID}  screenshotWaitTimeout=5  launchTimeout=10000  automationName=appium
 Open App
-    Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  app=${APP}	udid=${UDID}  screenshotWaitTimeout=5  launchTimeout=10000  automationName=appium
+    Open Application  ${APPIUM_URL}  xcodeConfigFile=${CONFIG}    platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  app=${APP}	udid=${UDID}  screenshotWaitTimeout=5  launchTimeout=10000  automationName=appium
