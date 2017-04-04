@@ -10,15 +10,15 @@
 		</data>
 		<key>GestureTestViewController.nib/objects.nib</key>
 		<data>
-		uTBtzRvh6C7nmMe5civJ7tuZN8M=
+		TYMfls5pexLAr5e2P38RH3f/h1g=
 		</data>
 		<key>GestureTestViewController.nib/runtime.nib</key>
 		<data>
-		5xj2IyefmmCQRxoH4/ywwnJ7MTg=
+		NwPoA4HWubWZPdHfnwqEEBpI5q8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uJk6NKTvvTnOOyp/cSyVAEpkm2I=
+		svFSOCMfB0fZke74USh1MWNzD6I=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		E34t3yYA3mj3nRWMKWCP58W2los=
+		SIoq878DqEFAKlLYhERCEgim5CQ=
 		</data>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -50,7 +50,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eEku9TKwJOB7HYAVLrY98sPetVY=
+			bAkZJVewA0ttMe3K9Vbq6Z8zxjo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -59,7 +59,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Bo0mqUxG0FNguBtMGv7O4VdhRZQ=
+			3Z7vY3n9s2lLMJJHosTtL9jjVDQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -82,33 +82,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uTBtzRvh6C7nmMe5civJ7tuZN8M=
+			TYMfls5pexLAr5e2P38RH3f/h1g=
 			</data>
 			<key>hash2</key>
 			<data>
-			sr414fvWHL/GDXEcwxtIc8OWoHZgFRgWgCWDKzq4OtQ=
+			3M6OYwcpoozfKS1I67qaF8q4oQcn6kQQgkeYARmWiL0=
 			</data>
 		</dict>
 		<key>GestureTestViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5xj2IyefmmCQRxoH4/ywwnJ7MTg=
+			NwPoA4HWubWZPdHfnwqEEBpI5q8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Fxs8nt7D9X2pXlFrQMsZh4Vs8S/637c2MUKKUDHsi1g=
+			D8Tm+/a4xzsFCRxVmsO5OIc1+MvT/l0hkruWRsabhVU=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E34t3yYA3mj3nRWMKWCP58W2los=
+			SIoq878DqEFAKlLYhERCEgim5CQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			YZKIU89nUA2mgeozVqSFRhePo182slKAw2Xg5Gwpmr4=
+			WzfdAtD48/lG6SML9fNZW0yZhIfyUEq3CeUC0QIEjv0=
 			</data>
 		</dict>
 		<key>en.lproj/InfoPlist.strings</key>
@@ -141,11 +141,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eEku9TKwJOB7HYAVLrY98sPetVY=
+			bAkZJVewA0ttMe3K9Vbq6Z8zxjo=
 			</data>
 			<key>hash2</key>
 			<data>
-			21DCG+gqfYAlYGgNrc9Kt3Tb+3Mz3PO94Nm3q2RoTPk=
+			Mua8eZX+HLf0vjNFm9ecYHmQlpNvwg6aOv6w+puF4oM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -154,11 +154,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Bo0mqUxG0FNguBtMGv7O4VdhRZQ=
+			3Z7vY3n9s2lLMJJHosTtL9jjVDQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			vaFdWBbL7bJiOp8LINoxbjthNuuwz4AAAVbFOyIpQZ0=
+			Sx136c31DlYyUT2j993lXpqpCOiEDcO4GBFmlRAzJXk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -181,6 +181,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
@@ -226,6 +231,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^Info\.plist$</key>
 		<dict>

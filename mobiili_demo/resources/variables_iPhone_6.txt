@@ -1,0 +1,24 @@
+*** Settings ***
+Library           AppiumLibrary		run_on_failure=No Operation
+
+*** Variables ***
+# ${CONFIG}	  /usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/.xcconfig
+${PLATFORM}	    iOS
+${VERSION}          10.1
+${DEVICE_NAME}	    iPhone
+${BROWSER_NAME}	    Safari
+${APPIUM_PORT}      4490
+${UDID}             ea345ac6ff7d752c9a306cf0155fac89ce708d0a
+${APPIUM_URL}       http://localhost:${APPIUM_PORT}/wd/hub
+${APP}              /Users/teststation/jenkins/workspace/appium_demo_ios_native/mobiili_demo/resources/demoapp_ios/TestApp.app
+${START_X}			100
+${START_Y}			150
+${END_X} 			100
+${END_Y}			250
+${BUNDLE_ID}        com.apple.mobilesafari
+
+*** Keywords ***
+Open Browser
+    Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  browserName=${BROWSER_NAME}  Name=XCUITest  noReset=true  showXcodeLog=true  webDriverAgentUrl=http://192.168.0.14:8100  
+Open App
+    Open Application  ${APPIUM_URL}   platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  app=${APP}  automationName=XCUITest  noReset=true  showXcodeLog=true  webDriverAgentUrl=http://192.168.51.47:8100
