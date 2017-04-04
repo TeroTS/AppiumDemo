@@ -8,6 +8,7 @@ ${HOME_LABEL}   1
 ${WORK_LABEL}   2
 ${MOBILE_LABEL}   3
 ${OTHER_LABEL}   4
+${KEYCODE_BACK}  4
 
 *** Test Cases ***
 Add contact
@@ -24,7 +25,9 @@ Add New Contact
     Select Phone Label  ${label}
     Input Text    id=com.example.android.contactmanager:id/contactEmailEditText    ${contact_email}
     Select Email Label  ${label}
-    Click Element    accessibility_id=Save
+    Hide Keyboard
+    Press Keycode   ${KEYCODE_BACK}
+    # Click Element    accessibility_id=Save
 
 Select Phone Label
     [Arguments]    ${index} 
