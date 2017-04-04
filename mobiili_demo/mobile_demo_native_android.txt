@@ -14,7 +14,7 @@ ${KEYCODE_BACK}  4
 Add contact
     [Tags]    demo
     Add New Contact    Timo Testaaja    040-12234568   timo.testaaja@test.com   ${WORK_LABEL}
-    Page Should Contain Text    Timo Testaaja
+    Wait Until Page Contains    Timo Testaaja
 
 *** Keywords ***
 Add New Contact
