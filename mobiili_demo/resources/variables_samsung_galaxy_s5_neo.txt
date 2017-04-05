@@ -17,6 +17,6 @@ Open Browser
 Open App
     Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  app=${APP}  automationName=appium
 Send Keys
-    [Arguments]   locator   text
-    Click Element   locator
-    Send Keys Adb   ${DEVICE_NAME}   text
+    [Arguments]   ${locator}   ${text}
+    Click Element   ${locator}
+    Send Keys Adb   ${DEVICE_NAME}   ${text}
