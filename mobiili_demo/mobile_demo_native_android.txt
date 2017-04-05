@@ -20,10 +20,10 @@ Add contact
 Add New Contact
     [Arguments]    ${contact_name}    ${contact_phone}    ${contact_email}   ${label}
     Click Element    accessibility_id=Add Contact
-    Input Text    id=com.example.android.contactmanager:id/contactNameEditText    ${contact_name}
-    Input Text    id=com.example.android.contactmanager:id/contactPhoneEditText    ${contact_phone}
+    Send Keys    id=com.example.android.contactmanager:id/contactNameEditText    ${contact_name}
+    Send Keys    id=com.example.android.contactmanager:id/contactPhoneEditText    ${contact_phone}
     Select Phone Label  ${label}
-    Input Text    id=com.example.android.contactmanager:id/contactEmailEditText    ${contact_email}
+    Send Keys    id=com.example.android.contactmanager:id/contactEmailEditText    ${contact_email}
     Select Email Label  ${label}
     Hide Keyboard
     Press Keycode   ${KEYCODE_BACK}
