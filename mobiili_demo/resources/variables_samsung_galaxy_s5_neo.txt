@@ -20,3 +20,4 @@ Send Keys
     [Arguments]   ${locator}   ${text}
     Click Element   ${locator}
     Send Keys Adb   ${DEVICE_NAME}   ${text}
+    Sleep  1
