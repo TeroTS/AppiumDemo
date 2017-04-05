@@ -22,11 +22,11 @@ Add New Contact
     Click Element    accessibility_id=Add Contact
     Send Keys    id=com.example.android.contactmanager:id/contactNameEditText    ${contact_name}
     Send Keys    id=com.example.android.contactmanager:id/contactPhoneEditText    ${contact_phone}
-    Select Phone Label  ${label}
-    Send Keys    id=com.example.android.contactmanager:id/contactEmailEditText    ${contact_email}
-    Select Email Label  ${label}
-    Hide Keyboard
-    Press Keycode   ${KEYCODE_BACK}
+    # Select Phone Label  ${label}
+    # Send Keys    id=com.example.android.contactmanager:id/contactEmailEditText    ${contact_email}
+    # Select Email Label  ${label}
+    # Hide Keyboard
+    # Press Keycode   ${KEYCODE_BACK}
     # Click Element    accessibility_id=Save
 
 Select Phone Label
