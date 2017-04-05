@@ -19,8 +19,8 @@ ${END_Y}			250
 
 *** Keywords ***
 Open Browser
-    Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  browserName=${BROWSER_NAME}  Name=XCUITest  noReset=true  showXcodeLog=true  webDriverAgentUrl=http://192.168.0.14:8100  
+    Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  browserName=${BROWSER_NAME}  Name=XCUITest  noReset=true  showXcodeLog=true  webDriverAgentUrl=http://192.168.51.47:8100  
 Open App
-    Open Application  ${APPIUM_URL}   platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  app=${APP}  automationName=XCUITest  noReset=true  showXcodeLog=true  webDriverAgentUrl=http://192.168.0.14:8100
+    Open Application  ${APPIUM_URL}   platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  app=${APP}  automationName=XCUITest  noReset=true  showXcodeLog=true  webDriverAgentUrl=http://192.168.51.47:8100
 
 
