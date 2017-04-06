@@ -25,7 +25,8 @@ Add New Contact
     Select Phone Label  ${label}
     Send Keys    id=com.example.android.contactmanager:id/contactEmailEditText    ${contact_email}
     Select Email Label  ${label}
-    Hide Keyboard
+    # Hide Keyboard
+    Press Keycode   ${KEYCODE_BACK}
     Press Keycode   ${KEYCODE_BACK}
     # Click Element    accessibility_id=Save
 

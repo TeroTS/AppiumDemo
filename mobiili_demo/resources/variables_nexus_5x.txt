@@ -1,5 +1,6 @@
 *** Settings ***
 Library           AppiumLibrary
+Library           Utils.py
 
 *** Variables ***
 ${PLATFORM}         Android
@@ -15,3 +16,8 @@ Open Browser
     Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  browserName=${BROWSER_NAME}  automationName=appium
 Open App
     Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  app=${APP}  automationName=appium
+Send Keys
+    [Arguments]   ${locator}   ${text}
+    Click Element   ${locator}
+    Send Keys Adb   ${DEVICE_NAME}   ${text}
+    Sleep  1
