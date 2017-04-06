@@ -10,12 +10,14 @@ ${BROWSER_NAME}     Chrome
 ${APPIUM_PORT}      4492
 ${APPIUM_URL}       http://localhost:${APPIUM_PORT}/wd/hub
 ${APP}              ${CURDIR}/demoapp_android/ContactManager.apk
+# appPackage=com.example.android.contactmanager
+#   appActivity=com.example.android.contactmanager.ContactManager
 
 *** Keywords ***
 Open Browser
     Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  browserName=${BROWSER_NAME}  automationName=appium
 Open App
-    Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  appPackage=com.example.android.contactmanager  appActivity=com.example.android.contactmanager.ContactManager  automationName=appium
+    Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}   automationName=appium
 Send Keys
     [Arguments]   ${locator}   ${text}
     Click Element   ${locator}
