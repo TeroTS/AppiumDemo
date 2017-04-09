@@ -6,8 +6,8 @@ Test Teardown           Close Application
 demo_test
     [Tags]    demo
     Open App
-    Input Text   accessibility_id=TextField1   9
-    Input Text   accessibility_id=TextField2   6
+    Input Value   accessibility_id=TextField1   9
+    Input Value   accessibility_id=TextField2   6
     Hide Keyboard	key_name=Done
     Click Element   accessibility_id=ComputeSumButton
     Element Text Should Be  accessibility_id=Answer  15
