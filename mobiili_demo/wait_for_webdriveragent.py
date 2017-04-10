@@ -4,7 +4,7 @@ import time
 
 status=""
 subprocess.call("/bin/launchctl stop teststation.webdriveragent", shell=True)
-time.sleep(3)
+time.sleep(5)
 while(status.find("200 OK") == -1):
   time.sleep(1)
   try:
