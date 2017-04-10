@@ -18,5 +18,5 @@ web_demo
     Click Element   id=unchecked_checkbox
     Click Element   id=checked_checkbox
     Input Text   id=fbemail   tomi.testaaja@mail.com
-    Input Text   id=comments    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac lorem ut lorem euismod iaculis.
+    Input Text   id=comments    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     # Capture Page Screenshot     filename=image_1_${PHONE_MODEL}.png
