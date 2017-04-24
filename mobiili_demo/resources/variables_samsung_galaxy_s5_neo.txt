@@ -17,7 +17,7 @@ ${APP}              ${CURDIR}/demoapp_android/ContactManager.apk
 Open Browser
     Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}  browserName=${BROWSER_NAME}  automationName=appium
 Open App
-    Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}   automationName=appium
+    Open Application  ${APPIUM_URL}  platformName=${PLATFORM}  platformVersion=${VERSION}  deviceName=${DEVICE_NAME}   automationName=appium   app=${APP}
 Send Keys
     [Arguments]   ${locator}   ${text}
     Click Element   ${locator}
