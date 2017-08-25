@@ -15,7 +15,7 @@ ${START_X}			100
 ${START_Y}			150
 ${END_X} 			100
 ${END_Y}			250
-${AGENT_URL}        http://192.168.51.63:8100
+${AGENT_URL}        http://192.168.47.129:8100
 
 *** Keywords ***
 Open Browser
